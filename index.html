@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="架空データで作成したシフト管理ポートフォリオデモ">
+  <title>ShiftFlow | シフト管理デモ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">S</span><div><strong>ShiftFlow</strong><small>Portfolio Demo</small></div></div>
+    <div class="demo-badge">架空データ・閲覧専用</div>
+  </header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">みどりマート 青空店</p><h1>2週間シフトダッシュボード</h1><p>希望と必要人数をひとつの画面で把握し、不足枠をすばやく見つけます。</p></div>
+      <label class="date-control">表示開始日<input id="startDate" type="date" value="2026-09-07"></label>
+    </section>
+    <section id="metrics" class="metrics" aria-label="集計指標"></section>
+    <section class="panel">
+      <div class="panel-heading"><div><p class="eyebrow">COVERAGE</p><h2>日別の配置状況</h2></div><div class="legend"><span><i class="dot ok"></i>充足</span><span><i class="dot warn"></i>不足</span></div></div>
+      <div id="dayCards" class="day-grid"></div>
+    </section>
+    <section class="split">
+      <article class="panel"><div class="panel-heading"><div><p class="eyebrow">STAFF</p><h2>希望提出状況</h2></div></div><div id="staffList" class="staff-list"></div></article>
+      <article class="panel"><div class="panel-heading"><div><p class="eyebrow">SECTIONS</p><h2>部門別アサイン</h2></div></div><div id="sectionBars" class="bars"></div></article>
+    </section>
+    <p class="privacy-note">この画面の名称・人数・勤務時間はすべてポートフォリオ用の架空データです。保存・送信は行いません。</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
